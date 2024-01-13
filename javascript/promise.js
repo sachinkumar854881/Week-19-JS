@@ -49,18 +49,3 @@
 // promise.then(synTask1).then(synTask2).then(val =>{
 //     console.log('end of the chain with value:',val)
 // })
-function promise(complete){
-    return new Promise(function(resolve,reject){
-        if(complete){
-            resolve('I am Successful')
-        }else{
-            reject('i am failed')
-        }
-    })
-}
-let onFulfill = (result) =>{
-    console.log(result)
-}
-let onReject = (error) =>{
-    console.log(error)
-}
